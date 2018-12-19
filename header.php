@@ -1,7 +1,10 @@
 <?php
 /**
  * The template for displaying the header.
+ *
+ * @package ThemeScaffold
  */
+
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -11,3 +14,4 @@
 	</head>
 	<body <?php body_class(); ?>>
 		<?php do_action( 'after_body' ); ?>
+		<h1><?php bloginfo( 'name' ); ?></h1>
