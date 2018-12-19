@@ -4,6 +4,7 @@ release
 vendor
 phpunit.xml
 .idea
+backstop_data
 
 # Project Files
 dist
