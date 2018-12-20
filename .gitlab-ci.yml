@@ -17,6 +17,6 @@ test:
     - set -x
     - set -euo pipefail
     - echo "Preparing visual tests"
-    - pushd tests/visual/ && backstop test --config=local-visual-test.json && popd
+    - cd tests/visual/ && backstop test --config=local-visual-test.json && cd -
     - echo "End of tests"
     
