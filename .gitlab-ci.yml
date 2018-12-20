@@ -1,14 +1,14 @@
 stages:
   - test
- 
+
 cache:
   paths:
     - node_modules
-    
+
 test:
   stage: test
   image:
-    name: backstopjs:backstopjs:v3.8.5
+    name: backstopjs/backstopjs:v3.8.5
     entrypoint: [""]
   script:
     - set -x
