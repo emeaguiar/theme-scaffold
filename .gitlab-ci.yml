@@ -1,0 +1,19 @@
+stages:
+  - test
+ 
+cache:
+  paths:
+    - node_modules
+    
+test:
+  stage: test
+  image:
+    name: backstopjs:backstopjs:v3.8.5
+    entrypoint: [""]
+  script:
+    - set -x
+    - set -euo pipefail
+    - echo "Preparing visual tests"
+    - pushd tests/visual/ && backstop test --config=local-visual-test.json && popd
+    - echo "End of tests"
+    
