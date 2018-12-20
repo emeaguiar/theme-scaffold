@@ -6,7 +6,7 @@ cache:
     - node_modules
 
 before_script:
-  - npm start && npm run start:visual
+  - npm start
 
 test:
   stage: test
